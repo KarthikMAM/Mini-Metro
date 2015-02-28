@@ -1,0 +1,142 @@
+﻿<Window x:Class="WpfApplication25.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mini Metro" Name="widget" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None" RenderOptions.BitmapScalingMode="HighQuality" Height="158" Width="514" MouseEnter="widget_MouseEnter" MouseLeave="widget_MouseLeave" Loaded="widget_Loaded" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AllowsTransparency="True" BorderBrush="White" BorderThickness="0.5">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+            <GradientStop Color="#DD000000" Offset="1"/>
+            <GradientStop Color="#22000000" Offset="0.3"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Height" Value="48"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Duration="0:0:0.3" Storyboard.TargetProperty="Height" To="38"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Duration="0:0:0.5" Storyboard.TargetProperty="Height" To="48"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Name="GridOfDock">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="7"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="Logo" ToolTip="Visit Us. . ." Content="© Kappspot" Cursor="Hand" Foreground="White" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25.6,18.4,0,0" Grid.Column="9" Height="26" Width="76" Grid.ColumnSpan="3" Grid.Row="3" MouseLeftButtonDown="Logo_MouseLeftButtonDown"/>
+
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Computer"                             Name="MyComputer"         MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="1"  Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Drives-Computer-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Library"                              Name="Libraries"          MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="2"  Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Explorer.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Windows Media Player"                 Name="WindowsMediaPlayer" MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="3"  Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Apps-Windows-Media-Player-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Recycle Bin"                          Name="RecycleBin"         MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="4"  Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Folders-OS-Recycle-Bin-Full-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Windows App Store"                    Name="WinStore"           MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="5"  Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Web-Windows-Store-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Adobe Reader"                         Name="AdobeReader"        MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="6"  Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Apps-Adobe-Acrobat-Reader-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Facebook"                             Name="Facebook"           MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="1"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Web-Facebook-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Microsoft Chat"                       Name="Chat"               MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="2"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\imagesCA4YNB9H.jpg"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Microsoft Music"                      Name="MicrosoftMusic"     MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="3"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Music.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Microsoft Mail"                       Name="Mail"               MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="4"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Other-Mail-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Microsoft Video"                      Name="Videos"             MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="5"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Folders-OS-My-Videos-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Microsoft People"                     Name="People"             MouseLeftButtonDown="ShortcutApps_Click" Grid.Column="6"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\windows8_people_128x128.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Google Launcher"                      Name="google"             MouseLeftButtonDown="SearchAppsClick"    Grid.Column="7"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\google.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Desktop Search"                       Name="WindowsSearch"      MouseLeftButtonDown="SearchAppsClick"    Grid.Column="8"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Other-Search-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Wikipedia Search"                     Name="WikipediaSearch"    MouseLeftButtonDown="SearchAppsClick"    Grid.Column="9"  Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Web-Wikipedia-alt-2-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Surf Websites at Ease"                Name="WebsiteLauncher"    MouseLeftButtonDown="SearchAppsClick"    Grid.Column="10" Grid.Row="2" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Web-Browsers-Internet-Explorer-10-Metro-icon.png"/>
+
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="2048 Game by Kappspot"                Name="_2048"              MouseLeftButtonDown="KappspotApps_Click" Grid.Column="1"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\10578062653902c7414fa39-44004507.jpg"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="AnagClk by Kappspot"                  Name="AnalogClock"        MouseLeftButtonDown="KappspotApps_Click" Grid.Column="2"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Clock-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Notes by Kappspot"                    Name="NotesTaker"         MouseLeftButtonDown="KappspotApps_Click" Grid.Column="6"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\windjview_metro_style_icon_by_rangewanderer-d5yqw24.png.jpg" />
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="DigiClk by Kappspot"                  Name="DigitalClock"       MouseLeftButtonDown="KappspotApps_Click" Grid.Column="3"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\clock-alarm-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Windows Search by Kappspot"           Name="SearchWidget"       MouseLeftButtonDown="KappspotApps_Click" Grid.Column="5"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Other-Search-alt-Metro-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Calender by Kappspot"                 Name="CalanderWidget"     MouseLeftButtonDown="KappspotApps_Click" Grid.Column="4"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Calendar.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Wordament Solver by Kappspot"         Name="WordamentSolver"    MouseLeftButtonDown="KappspotApps_Click" Grid.Column="7"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\wordament.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Express Stroke by Kappspot"           Name="PaintWidget"        MouseLeftButtonDown="KappspotApps_Click" Grid.Column="8"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Paint.jpg"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Hang Man by Kappspot"                 Name="HangMan"            MouseLeftButtonDown="KappspotApps_Click" Grid.Column="9"  Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Google Maps.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Flappy Bird by Kappspot"            Name="FlappyBird"         MouseLeftButtonDown="KappspotApps_Click" Grid.Column="10" Grid.Row="4" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Reddit.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Jumper by Kappspot"                   Name="Jumper"             MouseLeftButtonDown="KappspotApps_Click" Grid.Column="1"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\digg alt.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Shooting by Kappspot"                 Name="Shooting"           MouseLeftButtonDown="KappspotApps_Click" Grid.Column="2"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Share.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="CodeGen by Kappspot"                  Name="CodeGen"            MouseLeftButtonDown="KappspotApps_Click" Grid.Column="3"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Coding App.png"/>
+        <!--<Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Drop Favourites and Access them"      Name="DropObject"         MouseLeftButtonDown="KappspotApps_Click" Grid.Column="8"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Pin.png" Visibility="Hidden"/>-->
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Delete your Acitivity so far"         Name="ClearHistory"       MouseLeftButtonDown="ClearHistory_Click" Grid.Column="5"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Recycle Bin Empty alt.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Play Piano Tiles"                     Name="PianoTiles"         MouseLeftButtonDown="KappspotApps_Click" Grid.Column="6"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Del.icio us.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Snake and Ladders"                    Name="SnakeLadders"       MouseLeftButtonDown="KappspotApps_Click" Grid.Column="7"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Bookmarks alt.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Play photos in a photo frame widget"  Name="PhotoFrame"         MouseLeftButtonDown="KappspotApps_Click" Grid.Column="4"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Screen Resolution.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Cursor="Hand" ToolTip="Boxo Explorer"                        Name="Boxo"               MouseLeftButtonDown="KappspotApps_Click" Grid.Column="8"  Grid.Row="5" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center" ToolTipService.InitialShowDelay="1000" ToolTipService.ShowDuration="500" Source="Resources\Apps-App-Store-alt-Metro-icon.png"/>
+
+        <Button Cursor="Hand" ToolTip="See Ya Later!!!"                     Name="close" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="30.4,0.2,1,32.2" Click="close_Click" BorderBrush="Transparent" Background="Transparent" Grid.Column="10" Grid.Row="1">
+            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\1406407026_close_square_black.png" Width="18" Height="18" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
+        <Button Cursor="Hand" ToolTip="Switch between apps at ease"  Grid.Column="2" HorizontalAlignment="Left" Height="35" Grid.Row="3" VerticalAlignment="Center" Width="35" Name="switch_window" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="19.6,7.4,0,7.2" Click="switch_window_Click" BorderBrush="Transparent" Background="Transparent" Grid.ColumnSpan="2">
+            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\Aero WinFlip 3D.png" Height="28" Width="28" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
+        <Button Cursor="Hand" ToolTip="Go to your recent places and continue your work" Grid.Column="1" HorizontalAlignment="Left" Height="35" Grid.Row="3" VerticalAlignment="Center" Width="35" Name="recent" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="35,7.4,0,7.2" Click="recent_Click" BorderBrush="Transparent" Background="Transparent" Grid.ColumnSpan="2">
+            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\Bookmarks.png" Height="28" Width="28" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
+        <Button Cursor="Hand" ToolTip="More From Kappspot" Background="Transparent" BorderBrush="Transparent" Name="kappspot_productions" Grid.Column="1" HorizontalAlignment="Left" Height="35" Grid.Row="3" VerticalAlignment="Center" Width="35" Click="kappspot_productions_Click">
+            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\Power - Switch User.png" Stretch="Uniform" Height="28" Width="28" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+        <Label Content="Mini Metro" FontSize="14" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,2.6,0,0" Height="31" Width="92" Grid.ColumnSpan="3" Grid.Column="6" Grid.RowSpan="2" FontFamily="Showcard Gothic" Foreground="White"/>
+
+        <!--<ComboBox Visibility="Hidden" IsEditable="True" MaxDropDownHeight="70" KeyUp="FileHistory_KeyUp" BorderThickness="1.5" FontStyle="Italic" ToolTip="Recently Opened Files" Name="FileHistory" Grid.ColumnSpan="4" HorizontalAlignment="Center" Height="21" Text="Select an Item to Open it" VerticalAlignment="Center" Width="196" Grid.Column="5" Margin="1,18.4,1.4,10.2" Grid.Row="3" GotFocus="FileHistory_GotFocus" Cursor="Hand"/>-->
+
+        <ComboBox IsEditable="False" Name="AddressBarHistory" MaxDropDownHeight="70" Grid.Column="7" Grid.ColumnSpan="4" Grid.Row="1" Height="23" VerticalAlignment="Bottom" Margin="2,0,3,3" SelectionChanged="AddressBarHistory_SelectionChanged" Cursor="Hand" DropDownOpened="AddressBarHistory_DropDownOpened" BorderThickness="2"/>
+        <TextBox  Name="AddressBar" Grid.Column="7" Grid.ColumnSpan="4" Grid.Row="1" Height="23" VerticalAlignment="Bottom" Margin="2,0,22,3" BorderThickness="2" Text="Browse or Search" FontStyle="Italic" VerticalContentAlignment="Center" KeyUp="AddressBar_KeyUp" GotFocus="AddressBar_GotFocus" Cursor="IBeam" TextChanged="AddressBar_TextChanged"/>
+    </Grid>
+</Window>

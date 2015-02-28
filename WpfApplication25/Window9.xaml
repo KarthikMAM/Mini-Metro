@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication25.Window9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Side Strip" Height="158" Width="40" ShowInTaskbar="False" WindowStyle="None" MouseEnter="Window_MouseEnter" ResizeMode="NoResize" Cursor="AppStarting" AllowsTransparency="True" BorderBrush="White" BorderThickness="0.5">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+            <GradientStop Color="#DD000000" Offset="1"/>
+            <GradientStop Color="#22000000" Offset="0.3"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    <Grid>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Center" Width="40" Source="Resources\Actions-arrow-left-icon.png"/>
+    </Grid>
+    
+</Window>

@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApplication25.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Name="wordament" ShowInTaskbar="False" Title="Wordament Solver" Height="350" Width="525" ResizeMode="CanMinimize" Background="Chocolate" Closed="Window_Closed" PreviewKeyDown="wordament_PreviewKeyDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Button Name="Button01" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Width="50" Height="50" Click="Button01_Click"/>
+        <Button Name="Button02" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Width="50" Height="50" Click="Button02_Click"/>
+        <Button Name="Button03" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Width="50" Height="50" Click="Button03_Click"/>
+        <Button Name="Button04" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Width="50" Height="50" Click="Button04_Click"/>
+        <Button Name="Button05" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Width="50" Height="50" Click="Button05_Click"/>
+        <Button Name="Button06" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Width="50" Height="50" Click="Button06_Click"/>
+        <Button Name="Button07" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" Width="50" Height="50" Click="Button07_Click"/>
+        <Button Name="Button08" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3" Width="50" Height="50" Click="Button08_Click"/>
+        <Button Name="Button09" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" Width="50" Height="50" Click="Button09_Click"/>
+        <Button Name="Button10" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Width="50" Height="50" Click="Button10_Click"/>
+        <Button Name="Button11" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2" Width="50" Height="50" Click="Button11_Click"/>
+        <Button Name="Button12" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3" Width="50" Height="50" Click="Button12_Click"/>
+        <Button Name="Button13" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" Width="50" Height="50" Click="Button13_Click"/>
+        <Button Name="Button14" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Width="50" Height="50" Click="Button14_Click"/>
+        <Button Name="Button15" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" Width="50" Height="50" Click="Button15_Click"/>
+        <Button Name="Button16" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="3" Width="50" Height="50" Click="Button16_Click"/>
+        <Button Name="go"       BorderThickness="5" BorderBrush="BlueViolet" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="3" Width="50" Height="44" Click="Button_Click_1"/>
+        <TextBox Name="word_collector" VerticalContentAlignment="Center" BorderThickness="5" FontStyle="Italic" Background="AliceBlue" FontSize="12" BorderBrush="Blue" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="44" TextWrapping="Wrap" VerticalAlignment="Center" Width="190" Text="Type the sequence here" TextChanged="word_collector_TextChanged" ToolTip="Enter the Game's Grid Data in line Format"/>
+        <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible" BorderThickness="5" BorderBrush="Blue" Name="list1" Background="AliceBlue" Grid.Column="4" HorizontalAlignment="Left" Height="278" Margin="10,10,0,0" Grid.RowSpan="5" VerticalAlignment="Top" Width="215" FontSize="20" SelectionChanged="list1_SelectionChanged" MouseDoubleClick="list1_MouseDoubleClick"/>
+        <Label  Name="trademark" Content="©Kappspot" HorizontalAlignment="Left" VerticalAlignment="Bottom" HorizontalContentAlignment="Right" Grid.Column="4" Margin="11,34,0,0" Grid.Row="4" Width="215"/>
+        <Slider Name="slider" Value="200" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="115" Height="20" Grid.Column="4" Margin="10,0,0,0" Grid.Row="4" ValueChanged="Slider_ValueChanged"/>
+    </Grid>
+</Window>

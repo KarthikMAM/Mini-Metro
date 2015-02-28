@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfApplication25.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Icon" ResizeMode="NoResize" ShowInTaskbar="False" Cursor="Hand" MouseLeftButtonDown="Window_MouseLeftButtonDown" AllowDrop="True" MouseDoubleClick="Window_MouseDoubleClick" AllowsTransparency="True" WindowStyle="None" Top="20" Left="20" Background="Transparent" Height="100" Width="100" Drop="Window_Drop">
+    <Grid>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\Web-icon.png" Height="80" Width="80" VerticalAlignment="Top"/>
+        <Label Content="File Explorer" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="White"/>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApplication25.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kappspot Search" Cursor="Hand" MouseLeftButtonDown="Window_MouseLeftButtonDown" Left="100" Top="400" ShowInTaskbar="False" Height="320" ResizeMode="NoResize" Width="300" Background="Transparent" Opacity=".8" AllowsTransparency="True" WindowStyle="None">
+    <Grid>
+        <Border CornerRadius="15" Grid.RowSpan="7" Grid.ColumnSpan="7" BorderBrush="AntiqueWhite" BorderThickness="2" Background="Black"/>
+        <Button Click="Button_Click" Height="16" Width="16" BorderBrush="Black" Grid.Column="5" Margin="20,0,0,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Top">
+            <Image Source="Resources\1406407026_close_square_black.png" Width="16" Height="16" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
+        <Button Name="Search_files" Grid.Column="5" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Height="30" Grid.Row="1" VerticalAlignment="Center" Width="30" Click="Search_files_Click">
+            <Image Source="Resources\Start-Menu-Search-icon.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
+        <ComboBox Name="AddressBarHistory" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="1" VerticalAlignment="Center" Width="210" MaxDropDownHeight="70" SelectionChanged="AddressBarHistory_SelectionChanged" Cursor="Hand" IsEditable="False" DropDownOpened="AddressBarHistory_DropDownOpened" BorderThickness="2"/>
+        <TextBox  Name="AddressBar" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="1" VerticalAlignment="Center" Width="189" BorderThickness="2" Text="Type here" FontStyle="Italic" VerticalContentAlignment="Center" KeyUp="AddressBar_KeyUp" GotFocus="AddressBar_GotFocus" Cursor="IBeam" Margin="10.4,9.6,31.8,9.8"/>
+        <ComboBox VerticalContentAlignment="Center" Name="DateSpecs" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="2" VerticalAlignment="Center" Width="210"/>
+        <ComboBox VerticalContentAlignment="Center" Name="KindSpecs" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="3" VerticalAlignment="Center" Width="210"/>
+        <ComboBox VerticalContentAlignment="Center" Name="SizeSpecs" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="4" VerticalAlignment="Center" Width="210"/>
+        <TextBox Name="TypeSpecs" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="5" VerticalAlignment="Center" Width="210" VerticalContentAlignment="Center"/>
+        <Label Grid.ColumnSpan="2" HorizontalContentAlignment="Left" FontSize="10" Foreground="Chocolate" Content="  Date Modified:" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="90" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"/>
+        <Label Grid.ColumnSpan="2" HorizontalContentAlignment="Left" FontSize="10" Foreground="Chocolate" Content="  File Name:" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="90" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Grid.ColumnSpan="2" HorizontalContentAlignment="Left" FontSize="10" Foreground="Chocolate" Content="  Type:" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="90" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Grid.ColumnSpan="2" HorizontalContentAlignment="Left" FontSize="10" Foreground="Chocolate" Content="  Size:" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="90" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Grid.ColumnSpan="2" HorizontalContentAlignment="Left" FontSize="10" Foreground="Chocolate" Content="  Kind:" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="90" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Grid.ColumnSpan="2" HorizontalContentAlignment="Left" FontSize="10" Foreground="Chocolate" Content="  Kappspot Search" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="90" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>
