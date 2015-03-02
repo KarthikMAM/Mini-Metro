@@ -2,6 +2,7 @@
 A side strip dock for Windows 8
 
 This application is a shortcut dock to popular applications and websites. It also has an expanded view that contains several other widget apps written for this dock. It includes widgets like
+        
         * Clock widget (Analog and Digital)
        
         * Notes taker
