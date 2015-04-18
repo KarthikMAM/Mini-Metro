@@ -30,12 +30,12 @@
     <Grid>
         <Border BorderBrush="Transparent" BorderThickness="5" Height="270" Width="380">
             <Border.Background>
-                <ImageBrush ImageSource="Resources\chalkboard_background_full_page.png"/>
+                <ImageBrush ImageSource="Resources\ChalkBoard.png"/>
             </Border.Background>
             <TextBox Name="NotesEditor" VerticalScrollBarVisibility="Auto" BorderThickness="0" AcceptsTab="True" AcceptsReturn="True" HorizontalAlignment="Stretch" Background="Transparent" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="15" FontWeight="ExtraBold" VerticalAlignment="Stretch" Margin="13.2,9.2,13.4,35.6" Cursor="Pen" SpellCheck.IsEnabled="True" TextChanged="notes_editor_TextChanged" UndoLimit="20"/>
         </Border>
         <Button Name="close" HorizontalContentAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Top" VerticalContentAlignment="Top" Click="close_Click" Height="16" Width="16" BorderBrush="Transparent" Background="Transparent">
-            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\1406407026_close_square_black.png" Width="16" Height="16" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Resources\ExitIcon.png" Width="16" Height="16" Stretch="Uniform" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
         <Button BorderBrush="Transparent" Foreground="White" FontWeight="ExtraBold" BorderThickness="2" VerticalContentAlignment="Center" Content="Eraser" Background="Transparent" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Margin="174,244,0,0" Height="29"/>
         <Button BorderBrush="Transparent" Foreground="White" FontWeight="ExtraBold" BorderThickness="2" VerticalContentAlignment="Center" Content="Read" Background="Transparent" Name="Reader" Click="Reader_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Margin="39,244,0,0" Height="29" Focusable="False">

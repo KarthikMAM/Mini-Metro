@@ -183,7 +183,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="favicon%282%29.ico" />
-    <Content Include="Resources\Actions-arrow-left-icon.png">
+    <Content Include="Resources\ExpandLeft.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Apps\2048\2048.exe">
@@ -303,16 +303,16 @@
     <Content Include="Resources\Apps\WordamentSolver\WordamentSolver.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Bookmarks alt.png">
+    <Content Include="Resources\SnakeAndLadders.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Del.icio us.png">
+    <Content Include="Resources\TapTiles.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Other-Search-alt-Metro-icon.png">
+    <Content Include="Resources\FileSearch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Pin.png">
+    <Content Include="Resources\PinApp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\app.manifest" />
@@ -321,40 +321,40 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Content Include="Resources\chalkboard_background_full_page.png">
+    <Content Include="Resources\ChalkBoard.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Coding app.png">
+    <Content Include="Resources\CodeGen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\digg alt.png">
+    <Content Include="Resources\Jumper.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Google Maps.png">
+    <Content Include="Resources\HangMan.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\k7921468.jpg">
+    <Content Include="Resources\KappspotLogo.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\paint.jpg">
+    <Content Include="Resources\PaintApp.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Power - Switch User.png">
+    <Content Include="Resources\ExpanderToggle.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Recycle Bin Empty alt.png">
+    <Content Include="Resources\DeleteHistory.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Reddit.png">
+    <Content Include="Resources\FlappyBird.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Screen Resolution.png">
+    <Content Include="Resources\PhotoFrame.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Share.png">
+    <Content Include="Resources\ShootingGame.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\wordament.png">
+    <Content Include="Resources\WordamentSolver.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Apps\WordamentSolver\Resources\a.kappspot">
@@ -447,47 +447,47 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\10578062653902c7414fa39-44004507.jpg">
+    <Content Include="Resources\2048Icon.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\1406407026_close_square_black.png">
+    <Content Include="Resources\ExitIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Calendar.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\clock-alarm-icon.png">
+    <Content Include="Resources\DigiClk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Clock-icon.png">
+    <Content Include="Resources\AnalogClock.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\windjview_metro_style_icon_by_rangewanderer-d5yqw24.png.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Aero WinFlip 3D.png">
+    <Content Include="Resources\NotesTaker.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Apps-Adobe-Acrobat-Reader-Metro-icon.png">
+    <Content Include="Resources\TasksView.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Apps-App-Store-alt-Metro-icon.png">
+    <Content Include="Resources\AdobeReader.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Apps-Windows-Media-Player-Metro-icon.png">
+    <Content Include="Resources\BoxoExplorer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Bookmarks.png">
+    <Content Include="Resources\MediaPlayer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Favourites.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -495,7 +495,7 @@
     <Content Include="Resources\ClockFace.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Drives-Computer-Metro-icon.png">
+    <Content Include="Resources\Computer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -505,80 +505,80 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Folders-OS-My-Videos-Metro-icon.png">
+    <Content Include="Resources\Videos.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Folders-OS-Recycle-Bin-Full-Metro-icon.png">
+    <Content Include="Resources\RecycleBin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\google.png">
+    <Content Include="Resources\GoogleSearch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Hour.png">
+    <Content Include="Resources\HourHand.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\imagesCA4YNB9H.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Light-Wood-Background-Wallpaper-1024x640.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Minute.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Music.png">
+    <Content Include="Resources\Message.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Other-Mail-Metro-icon.png">
+    <Content Include="Resources\CalanderBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MinuteHand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MusicApp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Other-Search-Metro-icon.png">
+    <Content Include="Resources\MailApp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Second.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Start-Menu-Search-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Web-Browsers-Internet-Explorer-10-Metro-icon.png">
+    <Content Include="Resources\MultiSearch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Web-Facebook-Metro-icon.png">
+    <Content Include="Resources\SecondHand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SearchStart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\InternetExplorer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Web-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Web-Wikipedia-alt-2-Metro-icon.png">
+    <Content Include="Resources\Facebook.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Web-Windows-Store-Metro-icon.png">
+    <Content Include="Resources\HomeIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Wikipedia.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\windows8_people_128x128.png">
+    <Content Include="Resources\WindowsStore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PeopleApp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

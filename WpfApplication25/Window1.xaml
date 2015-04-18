@@ -5,10 +5,10 @@
     <Grid>
         <Border CornerRadius="15" Grid.RowSpan="7" Grid.ColumnSpan="7" BorderBrush="AntiqueWhite" BorderThickness="2" Background="Black"/>
         <Button Click="Button_Click" Height="16" Width="16" BorderBrush="Black" Grid.Column="5" Margin="20,0,0,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Top">
-            <Image Source="Resources\1406407026_close_square_black.png" Width="16" Height="16" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Image Source="Resources\ExitIcon.png" Width="16" Height="16" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
         <Button Name="Search_files" Grid.Column="5" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Height="30" Grid.Row="1" VerticalAlignment="Center" Width="30" Click="Search_files_Click">
-            <Image Source="Resources\Start-Menu-Search-icon.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Image Source="Resources\SearchStart.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
         <ComboBox Name="AddressBarHistory" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="1" VerticalAlignment="Center" Width="210" MaxDropDownHeight="70" SelectionChanged="AddressBarHistory_SelectionChanged" Cursor="Hand" IsEditable="False" DropDownOpened="AddressBarHistory_DropDownOpened" BorderThickness="2"/>
         <TextBox  Name="AddressBar" Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" Height="31" Grid.Row="1" VerticalAlignment="Center" Width="189" BorderThickness="2" Text="Type here" FontStyle="Italic" VerticalContentAlignment="Center" KeyUp="AddressBar_KeyUp" GotFocus="AddressBar_GotFocus" Cursor="IBeam" Margin="10.4,9.6,31.8,9.8"/>

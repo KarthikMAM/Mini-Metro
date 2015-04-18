@@ -11,7 +11,7 @@
     </Window.Background>
     
     <Grid>
-        <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Center" Width="40" Source="Resources\Actions-arrow-left-icon.png"/>
+        <Image RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Center" Width="40" Source="Resources\ExpandLeft.png"/>
     </Grid>
     
 </Window>

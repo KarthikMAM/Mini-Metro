@@ -19,7 +19,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
-            <Image RenderOptions.BitmapScalingMode="HighQuality" Name="Logo" Grid.ColumnSpan="8" Grid.Column="0" Source="Resources\k7921468.jpg" HorizontalAlignment="Center" Height="234" VerticalAlignment="Center" Width="234"/>
+            <Image RenderOptions.BitmapScalingMode="HighQuality" Name="Logo" Grid.ColumnSpan="8" Grid.Column="0" Source="Resources\KappspotLogo.jpg" HorizontalAlignment="Center" Height="234" VerticalAlignment="Center" Width="234"/>
             <Label Content="K" Name="letter0" FontSize="25" Foreground="white" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>
