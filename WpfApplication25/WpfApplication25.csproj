@@ -73,7 +73,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>MiniMetro.ico</ApplicationIcon>
+    <ApplicationIcon>favicon%282%29.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -182,7 +182,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="MiniMetro.ico" />
+    <Resource Include="favicon%282%29.ico" />
     <Content Include="Resources\ExpandLeft.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
